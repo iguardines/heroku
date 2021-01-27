@@ -14,5 +14,9 @@ def index():
 	return {"mensaje":2}
 
 
+@app.route('/3', methods=['GET'])
+def index():
+	return {"mensaje":3}
+
 if __name__ == "__main__":
 	app.run(port=5000, debug= DEBUG)
